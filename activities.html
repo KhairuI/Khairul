@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities </title>
+
+     <!--Use for Top Name -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+     
+       <!--Use for Normal Text -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet"> 
+     
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="activities.css">
+    <link rel="stylesheet" href="activitiesDesktop.css" media="screen and (min-width: 992px)">
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm navbar-dark activities-header">
+            <div class="container-fluid ">
+              <a class="navbar-brand text-white px-4 top-name" href="home.html"><h3>Khairul Islam</h3></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase px-5">
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-center text-md-left" href="#">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="about.html" >About Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main >
+
+      <div class="sub-menu">
+
+        <a href="#project">Projects</a>
+        <a href="#thesis">Publication</a>
+        <a href="#training">Training</a>
+        <a href="#tutorial">Tutorials</a>
+      </div>
+
+      <div class="main-div">
+
+<!--Projects--> 
+
+        <div class="projects" id="project">
+          <h1 class="heading">PROJECTS</h1> <hr class="common-hr">
+         
+
+          <div class="project-div">
+
+            <div class="first-row">
+
+<!--Smart Teaching System--> 
+              <div class="smart-teaching col-4">
+
+                <div class="project-card">
+
+                  <div class="card-title">
+
+                    <h2>Smart Teaching System </h2>
+                  </div>
+
+                  <div class="card-image">
+                          <img
+                          src="images/Projects/preview/teaching.jpg"
+                    alt="Smart Teaching System"
+                    data-original="teaching-full.jpg">
+                  </div>
+
+                  <div class="project-description">
+
+                    <p>This is a Android project in which a student get appointment from teacher. And teacher accept or decline 
+                      this appointment with comment and both is notified. It is built with <b>FireStore database, Rx java, 
+                      Dagger (2.3), Retrofit, MVVM Architecture pattern</b>. This app language is Java. <strong> <a href="https://github.com/KhairuI/Smart-Teaching-System" target="_blank">See Details</a></strong> 
+                      </p>
+                
+                  </div>
+                </div>
+
+              </div>
+
+              <!--Contact App--> 
+              <div class="Contact-app col-4">
+
+                <div class="project-card">
+
+                  <div class="card-title">
+
+                    <h2>Contact App </h2>
+                  </div>
+
+                  <div class="card-image">
+                          <img
+                          src="images/Projects/preview/contact.jpg"
+                    alt="Contact App"
+                    data-original="contact-full.jpg">
+                  </div>
+
+                  <div class="project-description">
+
+                    <p>This a contact saving app in which a user saves his/her contact in online database. If the user 
+                      lost the device, he/she can get contact by login. It is built with <b> FireStore database, Jetpack 
+                      component Navigation Component & MVVM Architecture pattern.</b> This app language is Java <strong> <a href="https://github.com/KhairuI/MVVM_CRUD_Search_with_Firestore" target="_blank">See Details</a></strong> 
+                      </p>
+                
+                  </div>
+                </div>
+
+              </div>
+
+              <!--MedHist--> 
+
+              <div class="MedHist col-4">
+
+                <div class="project-card">
+
+                  <div class="card-title">
+
+                    <h2>MedHist </h2>
+                  </div>
+
+                  <div class="card-image">
+                          <img
+                          src="images/Projects/preview/Medhist.jpg"
+                    alt="MedHist"
+                    data-original="Medhist-full.jpg">
+                  </div>
+
+                  <div class="project-description">
+
+                    <p>This an Android app which keeps track human health. In this app a user can save his/her 
+                      medical data (Prescription, Checkup report, Medicine name, Doctor Appointment data 
+                      etc.). It is built with <b>Firebase Realtime data base </b>.  <strong> <a href="https://drive.google.com/file/d/1UCOlcH5pxUcyPjFAyubxQqszvij1Vp-Y/view" target="_blank">See Details</a></strong> 
+                      </p>
+                
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="second-row">
+  <!--Tic Tac Toe--> 
+              <div class="Tic col-4">
+
+                <div class="project-card">
+
+                  <div class="card-title">
+
+                    <h2>Tic Tac Toe with AI </h2>
+                  </div>
+
+                  <div class="card-image">
+                          <img
+                          src="images/Projects/preview/tic.jpg"
+                    alt="Tic Tac Toe with AI"
+                    data-original="tic-full.jpg">
+                  </div>
+
+                  <div class="project-description">
+
+                    <p>This is a simple Game build with a <b>Artificial Intelegence Algorithm which is Min-Max.</b> This game has two option. One is human to human. Another is human to system. 
+                       This app language is Kotlin. <strong> <a href="https://github.com/KhairuI/AI-with-Tic-Tac-Toe" target="_blank">See Details</a></strong> 
+                      </p>
+                
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+<p class="single_text">There are more practise projects in my <a href="https://github.com/KhairuI" target="_blank">Github</a></p>
+
+        </div>
+
+        <!--Thesis-->
+
+        <div class="thesis" id="thesis">
+
+          <h1 class="heading">Publication</h1> <hr class="common-hr">
+
+          <div class="thesis-div">
+            <h3>Heart Diseases Prediction with Data Mining (Ongoing) </h3>
+
+          </div>
+
+        </div>
+
+        <!--Training -->
+
+        <div class="training" id="training">
+
+          <h1 class="heading">TRANING</h1> <hr class="common-hr">
+                  <!--Bite in Android -->
+
+          <div class="traning-div">
+
+            <div class="Tic col-6">
+
+              <div class="project-card">
+
+                <div class="card-title">
+
+                  <h4>Trainer at “Bite in Android with Kotlin” (Ongoing) </h4>
+                </div>
+
+                <div class="card-image">
+                        <img
+                        src="images/Projects/preview/Bite.jpg"
+                  alt="Bite in Android"
+                  data-original="Bite-full.jpg">
+                </div>
+
+                <div class="project-description">
+
+                  <p>“Bite in Android with Kotlin” an Android development training program. Which is organized 
+                    by Daffodil International University Computer Programing Club (DIU CPC) in Spring-2021 
+                    Semester. This program is continuing with “Kotlin” programing language.  <strong> <a href="https://github.com/KhairuI/Bite-in-Android" target="_blank">See Details</a></strong> 
+                    </p>
+              
+                </div>
+              </div>
+
+            </div>
+
+            <!--Dive in Android -->
+            <div class="Tic col-6">
+
+              <div class="project-card">
+
+                <div class="card-title">
+
+                  <h4>Trainer at “Dive in Android” </h4>
+                </div>
+
+                <div class="card-image">
+                        <img
+                        src="images/Projects/preview/dive.jpg"
+                  alt="Dive in Android"
+                  data-original="dive-full.jpg">
+                </div>
+
+                <div class="project-description">
+
+                  <p>"Dive in Android" Comprehensive Android Boot camp. It is android development training 
+                    program which is organized by Daffodil International University Computer Programing Club
+                    (DIU CPC) in Fall-2020 Semester. It was 4-month long training program which I tried to give 
+                    my best according to my knowledge.  <strong> <a href="https://github.com/KhairuI/Dive-in-Android" target="_blank">See Details</a></strong> 
+                    </p>
+              
+                </div>
+              </div>
+
+            </div>
+           
+
+
+            
+          </div>
+
+        </div>
+
+        <!--Tutorials -->
+
+        <div class="tutorials" id="tutorial">
+
+          <h1 class="heading">TUTORIALS</h1> <hr class="common-hr">
+
+          <div class="course col-4">
+
+            <div class="card">
+
+              <div class="card-title">
+                <h3>Android Course in Bangla(Java)</h3>
+
+              </div>
+              <div class="card-description">
+                <p>This is all class video of "DIVE IN ANDROID" Course. In this playlist cover 
+                  Android application development basic to advance.</p>
+              </div>
+
+              <strong><a class="watch" href="https://www.youtube.com/playlist?list=PLx1n1QRaNSmXw8WoqXh9r7MHn3V498w0r" target="_blank"><h4>WATCH PLAYLIST</h4></a></strong>
+              
+
+            </div>
+
+          </div>
+
+          <div class="mvvm col-4">
+
+            <div class="card">
+
+              <div class="card-title">
+
+                <h3>Android MVVM Bangla Tutorial</h3>
+
+              </div>
+              <div class="card-description">
+                <ul>
+                  <li>Firebase Google SignIn</li>
+                  <li>Firebase Cloud Firestore</li>
+                  <li>View Model</li>
+                  <li>Live Data</li>
+                  <li>Insert, Read, Update, Delete, Search</li>
+                  <li>Bottom Navigation with Navigation Components</li>
+                </ul>
+                
+              </div>
+
+              <strong><a class="watch" href="https://www.youtube.com/playlist?list=PLx1n1QRaNSmV4JLBZACS2iLIe1x9eZHW4" target="_blank"><h4>WATCH PLAYLIST</h4></a></strong>
+              
+
+            </div>
+
+          </div>
+
+          <div class="kotlin col-4">
+
+            <div class="card">
+
+              <div class="card-title">
+                <h3>Basic Kotlin Programing</h3>
+
+              </div>
+              <div class="card-description">
+
+              <p>In this playlist discuss about basic "Kotlin" programing language</p>
+                
+              </div>
+
+              <strong><a class="watch" href="https://www.youtube.com/playlist?list=PLx1n1QRaNSmVNlhNKmVDXW3ApxCXBFAJ0" target="_blank"><h4>WATCH PLAYLIST</h4></a></strong>
+              
+
+            </div>
+
+          </div>
+
+         
+
+        </div>
+
+
+      </div>
+
+    </main>
+
+    <footer class="activities-footer">
+      <p class="copy-right">Copyright &copy 2021 MD. Khairul Islam. All Right Reserved </p>
+
+    </footer>
+
+       <div class="model">
+
+
+          <img src="images/Profile/preview/uzzal.jpg" alt="" class="full-image"> 
+          <p class="caption"> Hello World</p>
+  
+      </div>
+    
+
+     <!-- JavaScript Bundle with Popper -->
+     <script type="text/javascript" src="activities.js">
+
+     </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>

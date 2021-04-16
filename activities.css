@@ -1,0 +1,308 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.activities-header{
+    background-color: #2E3094;
+
+}
+.main-div{
+    background-color: #F0F2F5;
+    padding: 10px;
+}
+.heading{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* For Mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+
+.top-name{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.sub-menu{
+    background-color: #E0F2F1;
+    padding: 12px;
+    text-align: center;
+}
+.sub-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 8px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+.sub-menu a:hover{
+    background-color: #2E3094;
+    color: white;
+}
+.sub-menu::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+
+.common-hr{
+    border-top: 2px dashed white;
+    margin: 10px auto;
+    width: 30%;
+}
+
+.project-div {
+    margin: 10px;
+    padding: 1%;
+  background-color: #F0F2F5;
+}
+
+.traning-div {
+    margin: 10px;
+    align-items: center;
+    padding: 1%;
+  background-color: #F0F2F5;
+}
+
+
+
+.project-card{
+    background-color: #bdbdbe;
+    border-radius: 6px;
+    padding: 10px;
+    height: 480px;
+    overflow: auto;
+    
+}
+
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    cursor: pointer;
+  transition: 1s;
+}
+.card-image img:hover{
+    box-shadow: #38383a 0 4px 8px 5px;
+    cursor: pointer;
+}
+
+.card-title{
+
+    margin-top: 10px;
+}
+
+.card-title h2{
+    background-color: #505053;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-title h4{
+    background-color: #505053;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.project-description {
+   margin-top: 5px;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    text-align: justify;
+    
+}
+.project-div h3{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+.project-details{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    font-family: 'Noto Serif', serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.firebase{
+    height: 600px;
+    max-width: 900px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firebase:hover{
+    box-shadow: #38383a 0 4px 8px 5px;
+    cursor: pointer;
+}
+
+.tic-tac{
+    height: 500px;
+    max-width: 800px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tic-tac:hover{
+    box-shadow: #38383a 0 4px 8px 5px;
+    cursor: pointer;
+}
+.project-div::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+.first-row::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+.second-row::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+.training::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+
+.thesis-div{
+
+    margin: 20px;
+}
+
+.thesis-div h3{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.card{
+    background-color: #bdbdbe;
+    border-radius: 6px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 400px;
+}
+
+.card:hover{
+    box-shadow: #38383a 0 4px 8px 5px;
+    cursor: pointer;
+}
+.tutorials::after{
+    content: '';
+    display: table;
+   clear: both;
+}
+.tutorials{
+    padding: 1% 5%;
+}
+
+.card-title{
+
+    margin-top: 10px;
+}
+
+.card-title h3{
+    background-color: #505053;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Noto Serif', serif;
+}
+.card-description{
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    text-align: justify;
+    overflow: auto;
+    margin-right: 20px;
+}
+
+.watch{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color: white;
+}
+.activities-footer{
+    background-color: #505053;
+    color: white;
+    padding: 10px;
+}
+.copy-right{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.single_text{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    font-size:15px;
+}
+
+.model{
+    background: rgb(0, 0, 0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.50s ease-out;
+}
+.model.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.model p{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.full-image{
+    position: absolute;
+    height: 70%;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+
+}
+
+.full-image.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+

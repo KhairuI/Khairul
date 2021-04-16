@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* For Mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+
+
+.home-header{
+    background-color: #2E3094;
+    
+}
+
+.main-div{
+    background-color: #F0F2F5;
+    padding: 10px;
+}
+
+.main-div .quata{
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    margin-bottom: 20px;
+    
+}
+.main-div .quata h2{
+    font-size: 40px;
+}
+
+.div_clear{
+    clear: both;
+}
+
+.top-name{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.profile-image{
+    height: 500px;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.profile-image:hover{
+    transform:  scale(1.1);
+}
+
+.model{
+    background: rgb(0, 0, 0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.50s ease-out;
+}
+
+.model.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.model p{
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.full-image{
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+
+}
+
+.full-image.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.personal-text{
+    font-family: 'Noto Serif', serif;
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 20px;
+    
+}
+
+.skill-title{
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    margin-bottom: 20px;
+}
+
+.dotted-line{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.experience{
+  padding: 1%;
+  background-color: #F0F2F5;
+}
+
+.card{
+    background-color: #bdbdbe;
+    border-radius: 6px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 600px;
+}
+
+.card:hover{
+    box-shadow: #38383a 0 4px 8px 5px;
+    cursor: pointer;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+.round-image{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.card-title{
+
+    margin-top: 10px;
+}
+
+.card-title h2{
+    background-color: #505053;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.under-line{
+    color:  whitesmoke;
+
+}
+.education-description{
+    font-family: 'Noto Serif', serif;
+}
+
+.skill-container{
+    padding-right: 45px;
+   
+}
+.skill-description{
+    overflow: auto;
+    margin-right: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+.skill-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 5px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    background-color: #F0F2F5;
+    width: 100%;
+    height: 10px;
+    top: calc(100% + 7px);
+    left: 0px;
+    border-radius: 50px;
+ }
+ .skill-container li::after{
+    content: '';
+    position: absolute;
+    background-color: #9c9ea1;
+    width: 0;
+    height: 10px;
+    top: calc(100% + 7px);
+    left: 0px;
+    border-radius: 50px;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+ }
+
+ /* Android*/
+ .skill-container li.android::after{
+    animation-name: android;
+}
+@keyframes android{
+
+   to{
+       width: 80%;
+   }
+}
+
+ /* Architure*/
+ .skill-container li.architecture::after{
+    animation-name: architecture;
+}
+@keyframes architecture{
+
+   to{
+       width: 60%;
+   }
+}
+
+ /* Java*/
+ .skill-container li.java::after{
+    animation-name: java;
+}
+@keyframes java{
+
+   to{
+       width: 70%;
+   }
+}
+
+ /* Kotlin*/
+ .skill-container li.kotlin::after{
+    animation-name: kotlin;
+}
+@keyframes kotlin{
+
+   to{
+       width: 50%;
+   }
+}
+
+ /* Python*/
+ .skill-container li.python::after{
+    animation-name: python;
+}
+@keyframes python{
+
+   to{
+       width: 40%;
+   }
+}
+
+ /* C Language*/
+ .skill-container li.c-language::after{
+    animation-name: c-language;
+}
+@keyframes c-language{
+
+   to{
+       width: 70%;
+   }
+}
+
+ /* Firebase */
+ .skill-container li.firebase::after{
+    animation-name: firebase;
+}
+@keyframes firebase{
+
+   to{
+       width: 80%;
+   }
+}
+
+ /* HTML & CSS */
+ .skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+
+   to{
+       width: 90%;
+   }
+}
+
+ /* Data Structure */
+ .skill-container li.algorithm::after{
+    animation-name: algorithm;
+}
+@keyframes algorithm{
+
+   to{
+       width: 60%;
+   }
+}
+
+ /* Java Script */
+ .skill-container li.script::after{
+    animation-name: script;
+}
+@keyframes script{
+
+   to{
+       width: 50%;
+   }
+}
+
+.experience-description{
+    overflow: auto;
+    font-family: 'Noto Serif', serif;
+    text-align: justify;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.home-footer{
+    background-color: #505053;
+    color: white;
+    padding: 10px;
+}
+
+.bottom-hr{
+    border-top: 2px dashed white;
+    margin: 20px auto;
+    width: 70%;
+}
+.contact-title{
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+   
+}
+.contact{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    
+}
+.social{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.button-design{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    margin: 10px;
+    padding: 5px;
+    width: 50px;
+    background-color: white;
+}
+
+.button-design:hover{
+    background-color: gray;
+}
+
+.youtube{
+    color: #FF0000;
+}
+
+.facebook{
+    color: #0A82ED;
+}
+
+.linkdin{
+    color: #0077B5;
+}
+
+.copy-right{
+    
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+
+
+

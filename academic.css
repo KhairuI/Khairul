@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* For Mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+
+.activities-header{
+    background-color: #2E3094;
+
+}
+
+.main-div{
+    background-color: #F0F2F5;
+    padding: 10px;
+}
+.top-name{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    text-align: center;
+}

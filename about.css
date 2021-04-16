@@ -1,0 +1,11 @@
+.about-header{
+    background-color: #2E3094;
+    box-sizing: border-box;
+}
+.top-name{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.text{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
