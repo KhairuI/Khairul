@@ -169,6 +169,8 @@ html{
 }
 .education-description{
     font-family: 'Noto Serif', serif;
+    overflow: auto;
+    margin-right: 10px;
 }
 
 .skill-container{
