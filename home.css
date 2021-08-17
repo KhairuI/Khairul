@@ -250,6 +250,17 @@ html{
    }
 }
 
+ /* Google Map */
+ .skill-container li.google_map::after{
+    animation-name: google_map;
+}
+@keyframes google_map{
+
+   to{
+       width: 60%;
+   }
+}
+
  /* Kotlin*/
  .skill-container li.kotlin::after{
     animation-name: kotlin;
